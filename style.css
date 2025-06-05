@@ -1,0 +1,130 @@
+/* Couleur de fond générale */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e0f7fa; /* bleu très clair */
+  margin: 0;
+  padding: 0;
+  color: #004d40; /* vert foncé */
+}
+
+/* Navigation */
+nav {
+  background-color: #00695c; /* vert sombre */
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+nav a {
+  color: #a7ffeb; /* turquoise clair */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #b2dfdb; /* turquoise doux */
+}
+
+/* Titres et paragraphes */
+h1, p {
+  text-align: center;
+  margin: 20px;
+}
+
+/* Liste projets */
+ul {
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #b2dfdb; /* turquoise clair */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 77, 64, 0.2);
+  color: #004d40;
+  list-style-type: none;
+}
+
+ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #004d40;
+}
+
+ul li:last-child {
+  border-bottom: none;
+}
+
+/* Formulaire */
+form {
+  max-width: 500px;
+  margin: 0 auto 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,77,64,0.2);
+}
+
+input, textarea, button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 2px solid #004d40;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #004d40;
+  background-color: #e0f2f1;
+  transition: background-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  background-color: #b2dfdb;
+  outline: none;
+}
+
+button {
+  background-color: #00796b;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #004d40;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #004d40;
+  color: #a7ffeb;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  input, textarea, button {
+    font-size: 14px;
+  }
+
+  ul {
+    font-size: 16px;
+  }
+}
